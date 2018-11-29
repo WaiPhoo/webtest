@@ -411,7 +411,7 @@ font-family: Ubuntu;
  		display: none;
  	}
  	.logo {
- 		min-width: 108%;
+ 		min-width: 100%;
  	}
  	.triangle1 {
         height: 0px;
