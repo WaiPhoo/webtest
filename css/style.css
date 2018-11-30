@@ -410,6 +410,7 @@ font-family: Ubuntu;
  	/*text over image*/
  	.wrapper-content{
    		position: relative;
+   		padding: 5px;
 	}
 	/* text over image*/
 	.text-wrapper{
