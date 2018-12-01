@@ -1,6 +1,7 @@
 body {
 font-family: Ubuntu;
 }
+/*main page*/
 .btn-developer, .btn-company {
 	width: 160px;
 	height: 40px;
@@ -30,7 +31,7 @@ font-family: Ubuntu;
 	width: 110%;
 }
 
-/*font styles*/
+/*font styles for all texts and titles*/
 .blog-txt {
  	font-size: 16px;
  	line-height: 25px;
@@ -156,6 +157,7 @@ font-family: Ubuntu;
  	text-align: center;
  	opacity: 0.5;
  }
+ /*footer*/
 .full {
     width: 100%;    
 }
@@ -239,46 +241,6 @@ font-family: Ubuntu;
 	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
 	box-shadow: 0 1px 0 #B4B3B3;
 }
-.social li {
-	background: none repeat scroll 0 0 #B5B5B5;
-	border: 2px solid #B5B5B5;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
-	border-radius: 50%;
-	float: left;
-	height: 36px;
-	line-height: 36px;
-	margin: 0 8px 0 0;
-	padding: 0;
-	text-align: center;
-	width: 36px;
-	transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-webkit-transition: all 0.5s ease 0s;
-	-ms-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-}
-.social li:hover {
-	transform: scale(1.15) rotate(360deg);
-	-webkit-transform: scale(1.1) rotate(360deg);
-	-moz-transform: scale(1.1) rotate(360deg);
-	-ms-transform: scale(1.1) rotate(360deg);
-	-o-transform: scale(1.1) rotate(360deg);
-}
-.social li a {
-	color: #EDEFF1;
-}
-.social li:hover {
-	border: 2px solid #2c3e50;
-	background: #2c3e50;
-}
-.social li a i {
-	font-size: 16px;
-	margin: 0 0 0 5px;
-	color: #EDEFF1 !important;
-}
 .footer-bottom {
 	background: #E3E3E3;
 	border-top: 1px solid #DDDDDD;
@@ -291,6 +253,7 @@ font-family: Ubuntu;
 .payments {
 	font-size: 1.5em;	
 }
+/*Styles for "Why to choose Thales Code" page*/
 .header {
  	text-align: center;
  	font-size: 50px;
@@ -347,10 +310,11 @@ font-family: Ubuntu;
  	opacity: 0.5;
  	color: #000000;
  }
+ /*button styles*/
  .find-btn, .read-btn {
  	border-radius: 25px;
  }
- .btn-text {
+ .btn-text, .btn-text2 {
   	font-style: bold;
  	font-size: 13px;
  	text-align: center;
@@ -405,14 +369,13 @@ font-family: Ubuntu;
   text-align: left;
 }
 
-/*Desktop*/
+/*Desktop view*/
  @media only screen and (min-width: 765px) {
  	/*text over image*/
  	.wrapper-content{
    		position: relative;
    		padding: 5px;
 	}
-	/* text over image*/
 	.text-wrapper{
     	position: absolute;
     	top: 50%;
@@ -440,6 +403,7 @@ font-family: Ubuntu;
  	.logo {
  		min-width: 100%;
  	}
+ 	/*background triangles for "Why to choose thales code" page*/
  	.triangle1 {
         height: 0px;
         width: 0px;
@@ -482,15 +446,21 @@ font-family: Ubuntu;
         margin-left: -30%;
         margin-top: -20%;
     }
+    /*thalescode blogs*/
+    .box1, .box3 {
+ 		padding-right: 5px;
+ 	}
+ 	.box2, .box4 {
+ 		padding-left: 5px;
+ 	}
  }
 
-/*mobile*/
+/*mobile view*/
  @media only screen and (max-width: 765px) {
  	/*text over image*/
  	.wrapper-content{
     	position: relative;
 	}
-	/* text over image*/
 	.text-wrapper{
     	position: absolute;
     	top: 80%;
@@ -514,8 +484,26 @@ font-family: Ubuntu;
  	.desktop {
  		display: none;
  	}
+ 	/*services page*/
  	#feature {
  		background-image: linear-gradient(#2FB7F3, #769ADC, #9376DC);
+ 	}
+ 	.emp {
+ 		color: #FFFFFF;
+ 		line-height: 18px;
+ 		font-style: bold;
+ 		font-size: 16px;
+ 		margin-top: 15%;
+ 		text-align: right;
+	}
+ 	.can {
+ 		color: #FFFFFF;
+ 		line-height: 18px;
+ 		font-style: bold;
+ 		font-size: 16px;
+ 		opacity: 0.3;
+ 		margin-top: 15%;
+ 		text-align: left;
  	}
  	header {
  		min-height: 100%;
@@ -523,6 +511,7 @@ font-family: Ubuntu;
  	.logo {
  		padding-top: 10px;
  	}
+ 	/*buttons in main page*/
  	.btn-developer, .btn-company {
 		width: 140px;
 		height: 40px;
@@ -643,34 +632,31 @@ font-family: Ubuntu;
  		opacity: 0.5;
  		color: #000000;
  	}
-  	.find-btn, .read-btn {	
+ 	/*button styles in mobile view*/
+  	.find-btn {	
  		background: transparent;
  		width: 105px;
  		margin-left: 67%;
  		margin-top: -75px;
  		border: 1px solid #FFFFFF;
  	}
+ 	.read-btn {	
+ 		background: transparent;
+ 		width: 105px;
+ 		margin-left: 67%;
+ 		margin-top: -75px;
+ 		border: 1px solid #E7DBD9;
+ 	}
  	.btn-text {
  		font-size: 9px;
+ 		color: #FFFFFF;
+ 	}
+ 	.btn-text2 {
+ 		font-size: 9px;
  		color: #000000;
+ 		opacity: 0.5;
  	}
- 	.emp {
- 		color: #FFFFFF;
- 		line-height: 18px;
- 		font-style: bold;
- 		font-size: 16px;
- 		margin-top: 15%;
- 		text-align: right;
-	}
- 	.can {
- 		color: #FFFFFF;
- 		line-height: 18px;
- 		font-style: bold;
- 		font-size: 16px;
- 		opacity: 0.3;
- 		margin-top: 15%;
- 		text-align: left;
- 	}
+ 	/*icons in ThalesBlog page*/
 	.icons {
  		padding-bottom: 20px;
  	}
