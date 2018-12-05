@@ -1,6 +1,7 @@
-body {
+html, body {
+     overflow-x: hidden;
      font-family: Ubuntu;
-}
+ }
 /*main page*/
  .btn-developer, .btn-company {
      width: 160px;
@@ -527,7 +528,7 @@ body {
          padding-bottom: 10%;
     }
      #about {
-         padding-top: 30%;
+         padding-top: 10%;
          padding-bottom: 10%;
          margin-left: -10%;
          margin-right: -10%;
