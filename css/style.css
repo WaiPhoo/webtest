@@ -468,14 +468,32 @@ font-family: Ubuntu;
 /*mobile view*/
  @media only screen and (max-width: 765px) {
    #home {
-   
-   background-color: #FFFFFF;
-   background-image: none;
+       background-image: url('../image/mobile-bg.png');
+       background-repeat: no-repeat;
+       width: 100%;
+       min-height: 130%;
+       margin-top: 0%;
+       /*background-size: cover;*/
+       padding-top: 4%;
+       /*background-color: #FFFFFF;
+   background-image: none;*/
   }
   .menu {
     color: #000000;
     margin-left: 8%;
     float: left;
+  }
+  .home-btn-div {
+    width: 20px;
+    margin-left: 80%;
+    margin-top: 0%;
+    color: #000000;
+  }
+  .home-btn {
+    background-color: #FFFFFF;
+    border-style: none;
+    font-size: 20px;
+    opacity: 0.3;
   }
   /*background triangles for main page*/
   .triangle4 {
@@ -565,6 +583,13 @@ font-family: Ubuntu;
  		display: none;
  	}
  	/*services page*/
+  #blog1, #about, #headquarter{
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  #job {
+    padding-top: 0%;
+  }
  	#feature {
     padding-top: 8%;
  		background-image: linear-gradient(#2FB7F3, #769ADC, #9376DC);
@@ -595,7 +620,7 @@ font-family: Ubuntu;
  	}
  	/*buttons in main page*/
  	.btn-developer {
-    position: absolute;
+    position: relative;
 		width: 100px;
 		height: 40px;
 		color: #FFFFFF;
@@ -603,11 +628,12 @@ font-family: Ubuntu;
 		background-color: #555;
 		border: none;
 		text-align: center;
-    margin-top: -140px;
-    margin-left: 47px;
+    margin-top: 280px;
+    margin-left: -20px;
+    position: absolute;
 	}
   .btn-company {
-    position: absolute;
+    position: relative;
     width: 100px;
     height: 40px;
     color: #FFFFFF;
@@ -615,8 +641,9 @@ font-family: Ubuntu;
     background-color: #555;
     border: none;
     text-align: center;
-    margin-top: -90px;
-    margin-left: 100px;
+    margin-top: 350px;
+    margin-left: 30px;
+    position: absolute;
   }
  	/*font style in mobile view*/
  	.title-style1 {
@@ -628,6 +655,8 @@ font-family: Ubuntu;
  		text-align: left;
  		letter-spacing: -0.3px;
  		color: #000000;
+    margin-top: -60px;
+    margin-left: -15px;
  	}
  	.title-style2 {
  		font-style: bold;
@@ -636,6 +665,7 @@ font-family: Ubuntu;
  		text-align: left;
  		letter-spacing: -0.3px;
  		color: #000000;
+    margin-left: -15px;
  	}
  	.blog-txt {
  		font-size: 14px;
@@ -651,6 +681,7 @@ font-family: Ubuntu;
  		line-height: 29px;
  		text-align: left;
  		color: #342A2F;
+    margin-top: 0%;
  	}
  	.title-style7 {
  		font-style: bold;
@@ -675,9 +706,6 @@ font-family: Ubuntu;
  		text-align: left;
  		color: #313541;
  	}
-  section {
-    padding-top: 0px;
-  }
  	.services {
  		padding-left: 0px;
  		font-style: bold;
