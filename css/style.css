@@ -544,8 +544,8 @@ body {
          display: none;
     }
      .mobile-nav {
-         margin-right: -40%;
-         margin-left: -40%;
+         margin-right: 0%;
+         margin-left: 0%;
     }
     /*services page*/
      #blog1, #headquarter{
