@@ -546,6 +546,7 @@ body {
      .mobile-nav {
          margin-right: 0%;
          margin-left: 0%;
+          width: 100%;
     }
     /*services page*/
      #blog1, #headquarter{
