@@ -502,7 +502,7 @@ body {
      .menu {
          color: #000000;
          float: left;
-         margin-left: -5%;
+         margin-left: 0%;
     }
      .home-btn-div {
          width: 20px;
