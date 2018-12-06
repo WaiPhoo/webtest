@@ -1,8 +1,8 @@
-html, body {
-     overflow-x: hidden;
+body {
      font-family: Ubuntu;
  }
 /*main page*/
+
  .btn-developer, .btn-company {
      width: 160px;
      height: 40px;
@@ -465,6 +465,9 @@ html, body {
 }
 /*mobile view*/
  @media only screen and (max-width: 765px) {
+     html {
+        overflow-x: hidden;
+     }
      #home {
          background-image: url('../image/mobile-bg.png');
          background-repeat: no-repeat;
