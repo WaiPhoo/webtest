@@ -166,8 +166,23 @@ body {
 /*map*/
  .mapouter {
     text-align: right;
-    height: 500px;
+    position: relative;
 }
+ .map-text {
+    position: absolute;
+    top: 35%; 
+    left: 35%; 
+    z-index: 99; 
+    background-color: #51A5DA;
+    color: #FFFFFF;
+    padding: 40px;
+    text-align: center;
+    font-size: 28px;
+ }
+ .map-text p {
+    font-size: 15px;
+    text-align: left;
+ }
  .gmap_canvas {
     overflow: hidden;
     background: none!important;
@@ -405,6 +420,9 @@ body {
          background-color: #000000 !important;
          opacity: 0.5;
     }
+     .card {
+         border-style: none;
+     }
     /*thalescode blogs*/
      .box1, .box2, .box3, .box4 {
          width: 90%;
@@ -564,7 +582,7 @@ body {
     }
      #feature {
          padding-top: 8%;
-         background-image: linear-gradient(#2FB7F3, #769ADC, #9376DC);
+         background-image: linear-gradient(119.64deg, #2FB7F3 3.41%, #769ADC 60.49%, #9376DC 119.98%);
          margin-left: -10%;
          margin-right: -10%;
     }
@@ -714,7 +732,7 @@ body {
          margin-right: 10px;
          margin-bottom: 15%;
          margin-top: 10%;
-         height: 291px;
+         height: 330px;
          text-align: center;
          outline-offset: 0px 2px;
          opacity: 0.9;
@@ -742,6 +760,10 @@ body {
          line-height: 20px;
          opacity: 0.5;
          color: #000000;
+    }
+    .carousel-item {
+        height: 120%;
+        box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.080163);
     }
     /*button styles in mobile view*/
      .find-btn {
@@ -777,6 +799,18 @@ body {
     }
      .information, .partner {
          width: 80%;
+    }
+    /*map in mobile view*/
+    .map-text {
+        position: absolute;
+        top: 40%; 
+        left: 30%; 
+        z-index: 99; 
+        background-color: #51A5DA;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        font-size: 28px;
     }
 }
  
