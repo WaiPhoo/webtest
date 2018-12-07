@@ -1,9 +1,9 @@
 body {
      font-family: Ubuntu;
- }
+}
 /*main page*/
-
  .btn-developer, .btn-company {
+    font-family: Ubuntu;
      width: 160px;
      height: 40px;
      color: #FFFFFF;
@@ -162,6 +162,17 @@ body {
 }
  .blog-img {
      width: 30%;
+}
+/*map*/
+ .mapouter {
+    text-align: right;
+    height: 500px;
+}
+ .gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 500px;
+    width: 1080px;
 }
 /*footer*/
  .full {
@@ -324,6 +335,7 @@ body {
      border-radius: 25px;
 }
  .btn-text, .btn-text2 {
+    font-family: Ubuntu;
      font-style: bold;
      font-size: 13px;
      text-align: center;
@@ -381,6 +393,17 @@ body {
  @media only screen and (min-width: 765px) {
      #home {
          background-image: url('../image/bg.jpg');
+    }
+     .carousel-item {
+         height: 430px;
+    }
+     .carousel-indicators {
+         bottom: -50px;
+    }
+     .latestjobslide li::before {
+         border-radius: 100%;
+         background-color: #000000 !important;
+         opacity: 0.5;
     }
     /*thalescode blogs*/
      .box1, .box2, .box3, .box4 {
@@ -466,8 +489,8 @@ body {
 /*mobile view*/
  @media only screen and (max-width: 765px) {
      html {
-        overflow-x: hidden;
-     }
+         overflow-x: hidden;
+    }
      #home {
          background-image: url('../image/mobile-bg.png');
          background-repeat: no-repeat;
@@ -478,12 +501,12 @@ body {
     }
      .menu {
          color: #000000;
-         margin-left: 8%;
          float: left;
+         margin-left: -5%;
     }
      .home-btn-div {
          width: 20px;
-         margin-left: 80%;
+         margin-left: 94%;
          margin-top: 0%;
          color: #000000;
     }
@@ -519,6 +542,10 @@ body {
     }
      .desktop {
          display: none;
+    }
+     .mobile-nav {
+         margin-right: -40%;
+         margin-left: -40%;
     }
     /*services page*/
      #blog1, #headquarter{
@@ -574,7 +601,7 @@ body {
          font-size: 11px;
          background-color: transparent;
          text-align: center;
-         margin-top: 335px;
+         margin-top: 420px;
          margin-left: 40px;
          position: absolute;
          font-weight: bold;
@@ -589,7 +616,7 @@ body {
          background-color: transparent;
          border-style: none;
          text-align: center;
-         margin-top: 394px;
+         margin-top: 484px;
          margin-left: 90px;
          position: absolute;
          font-weight: bold;
@@ -731,10 +758,12 @@ body {
          border: 1px solid #E7DBD9;
     }
      .btn-text {
+         font-family: Ubuntu;
          font-size: 9px;
          color: #FFFFFF;
     }
      .btn-text2 {
+         font-family: Ubuntu;
          font-size: 9px;
          color: #000000;
          opacity: 0.5;
